@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-odtd(br*5_3osxuk@z^n!gqte=vxzxyw!&!tk^pm$%p*q*bm!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'potential-fortnight-p799gv65v743gq4-8000.app.github.dev']
 
 
 # Application definition
