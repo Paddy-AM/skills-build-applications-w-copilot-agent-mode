@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-odtd(br*5_3osxuk@z^n!gqte=vxzxyw!&!tk^pm$%p*q*bm!!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'congenial-robot-pwrx4jxpp9c6vjv-8000.app.github.dev']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -75,9 +75,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -125,9 +122,8 @@ USE_TZ = True
 STATIC_URL = "static/"
 
 # Default primary key field type
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['*']
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
